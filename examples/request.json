@@ -1,0 +1,2 @@
+{"job_id":"demo-001","purpose":"authorized public-source enrichment","authorization_context":"case-policy-reference","leads":[{"identifier":"example_user","lead_type":"username","lead_source_url":"https://example.org/source"}],"requested_tools":["blackbird","social_analyzer"]}
+

@@ -1,0 +1,23 @@
+[project]
+name = "geyser-osint-enrichment"
+version = "0.1.0"
+description = "Standalone, lead-driven OSINT enrichment service for Geyser integration"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi==0.115.6",
+  "uvicorn[standard]==0.34.0",
+  "pydantic==2.10.5",
+  "httpx==0.28.1",
+]
+
+[project.optional-dependencies]
+test = ["pytest==8.3.4", "pytest-asyncio==0.25.3"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+addopts = "-W default"
+
+[tool.setuptools.packages.find]
+include = ["app*"]
+
